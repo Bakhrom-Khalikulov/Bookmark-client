@@ -249,6 +249,134 @@ a{
 
 
 
+/* ****************** FEATURE STYLE START********************* */
+.feature-section{
+    margin-bottom: 305px;
+}
+
+/* .feature-section__wrapper{
+    position: relative;
+} */
+
+.feature-section__title{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: var(--main-text-color);
+}
+
+.feature-section__desc{
+    width: 100%;
+    max-width: 540px;
+    margin-top: 0;
+    margin-bottom: 72px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+/* .feature-section__wrapper-end{
+    position: relative;
+} */
+
+.tab__list{
+    display: flex;
+    justify-content: center;
+}
+
+.tab__item:not(:last-child){
+    /* margin-right: 90.5px; */
+}
+
+.tab__item{
+    margin-bottom: 129px;
+}
+
+.tab__link{
+    display: block;
+    margin-top: 0;
+    padding-bottom: 27px;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.533333px;
+    color: var(--main-text-color);
+    border-bottom: 1px solid #495DCF33;
+    width: 243px;
+}
+
+/* .tab__link:hover{
+    border-bottom: 4px solid var(--line_active-color);
+} */
+
+
+.panel__item{
+    margin-left: 620px
+}
+
+.panel__title{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+    color: var(--main-text-color);
+}
+
+.panel__desc{
+    width: 100%;
+    max-width: 445px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.panel__btn{
+    margin-top: 0;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--main-bg-color);
+    background: var(--button-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+}
+
+.tab__item--active{
+    border-bottom: 4px solid var(--line_active-color);
+}
+
+.panel__item{
+    display: none;
+}
+
+.panel__item--active{
+    display: block;
+}
+
+
+
+/* ****************** FEATURE STYLE ENDS********************* */
+
+
+
 
 
 
