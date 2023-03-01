@@ -378,6 +378,7 @@ a{
 /* ****************** EXTENSION STYLE STARTS********************* */
 .extension-section{
     margin-bottom: 149px;
+    
 }
 
 .ext-section__title{
@@ -483,6 +484,121 @@ a{
     border-radius: 5px;
 }
 /* ****************** EXTENSION STYLE ENDS********************* */
+
+
+/* ****************** FAQ STYLE START********************* */
+.faq-section{
+    margin-bottom: 160px;
+}
+
+.faq__title{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: var(--main-text-color);
+}
+
+.faq__desc{
+    width: 100%;
+    max-width: 539px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 56px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #242A45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+
+.faq__question{
+    display: block;
+}
+
+.faq__question::after {
+    margin-left: 100px;
+    display: inline-block;
+    transition: 1s;
+    content: url(../images/down.svg)
+}
+
+.faq__info[open] summary::after {
+    content: url(../images/up.svg);
+}
+
+.faq__details{
+    width: 100%;
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.faq__question{
+    margin-top: 0;
+    margin-bottom: 13px;
+    padding-top: 19px;
+    width: 100%;
+    max-width: 540px;
+    border-top: 1px solid #DEDFE3;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--main-text-color);
+}
+
+.faq__question:hover{
+    color: var(--line_active-color);
+}
+
+.faq__answer{
+    margin-top: 0;
+    margin-bottom: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.faq__btn{
+    margin-left: 500px;
+    margin-top: 54px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--main-bg-color);
+    background: var(--button-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+}
+
+.faq__btn:active{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--button-color);
+    background: #FFFFFF;
+    border: 2px solid var(--button-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+}
+
+
+
+/* ****************** FAQ STYLE ENDS********************* */
 
 
 
