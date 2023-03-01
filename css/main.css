@@ -1,0 +1,257 @@
+/* rubik-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rubik-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v23-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v23-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* rubik-500italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/rubik-v23-latin-500italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/rubik-v23-latin-500italic.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v20-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v20-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v20-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root{
+    --main-bg-color: #fff;
+    --main-text-color: #242A45;
+    --line_active-color: #FA5959;
+    --button-color: #5267DF;
+}
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik', "Arial", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1144px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ****************** HEADER STYLES STARTS********************* */
+.site-header{
+    padding-top: 48px;
+    padding-bottom: 48px;    
+}
+
+.site-header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__logo{
+    color: var(--main-bg-color);
+}
+
+.sitenav__list{
+    display: flex;
+}
+
+.sitenav__item:not(:last-child){
+    margin-right: 44px;
+}
+
+.sitenav__link{
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    color: var(--main-text-color);
+}
+
+.sitenav__link:hover{
+    color: var(--line_active-color);
+}
+
+.sitenav__link_login{
+    padding: 12px 34px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 1.5px;
+    color: var(--main-bg-color);
+    border: 2px solid var(--line_active-color);
+    background-color: var(--line_active-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+}
+
+.sitenav__link_login:hover{
+    background: var(--main-bg-color);
+    border: 2px solid;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    color: var(--line_active-color);
+}
+
+/* ****************** HEADER STYLES ENDS********************* */
+
+
+/* ****************** MAIN STYLES START********************* */
+.site-main{
+    
+}
+
+/* ****************** HERO STYLE STARTS********************* */
+.hero-section{
+    padding-top: 137px;
+    background-image: url(../images/Hero.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 653px) 66px;
+}
+
+
+.hero-section__title{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+    color: var(--main-text-color);
+}
+
+.hero-section__desc{
+    width: 100%;
+    max-width: 540px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.hero-section__btn{
+    margin-top: 0;
+    margin-bottom: 203px;
+    margin-right: 16px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--main-bg-color);
+    background: var(--button-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: 2px solid var(--button-color);
+}
+
+.hero-section__btn:hover{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: var(--button-color);
+    background: #FFFFFF;
+    border: 2px solid var(--button-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+}
+
+/* ****************** HERO STYLE ENDS********************* */
+
+
+
+
+
+
+
+
+/* ****************** MAIN STYLES END********************* */
