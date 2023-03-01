@@ -596,13 +596,95 @@ a{
     border-radius: 5px;
 }
 
-
-
 /* ****************** FAQ STYLE ENDS********************* */
 
 
+/* ****************** CONTACT STYLE STARTS********************* */
+.contact-section{
+    background-color: var(--button-color);
+}
+
+.contact-section__wrapper{
+    
+}
+
+.contact__text{
+    padding-top: 58px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: var(--main-bg-color);
+}
+
+.contact__title{
+    width: 100%;
+    max-width: 408px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: var(--main-bg-color);
+}
+
+.contac__info{
+    text-align: center;
+}
+
+.contact-email{
+    padding: 10px;
+    padding-right: 113px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 84px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: rgba(36, 42, 69, 0.250109);
+    background: var(--main-bg-color);
+    border-radius: 5px;
+    border: none;
+}
+
+.contact__btn{
+    padding: 16px 24px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: var(--main-bg-color);
+    background: var(--line_active-color);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+}
 
 
 
+
+
+/* ****************** CONTACT STYLE ENDS********************* */
 
 /* ****************** MAIN STYLES END********************* */
+
+
+
+/* ****************** FOOTER STYLES START********************* */
+
+
+
+/* ****************** FOOTER STYLES END********************* */
+
+
+
