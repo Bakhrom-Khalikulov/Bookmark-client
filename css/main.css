@@ -377,7 +377,7 @@ a{
 
 /* ****************** EXTENSION STYLE STARTS********************* */
 .extension-section{
-    margin-bottom: 149px;
+    margin-bottom: 200px;
     
 }
 
@@ -421,6 +421,17 @@ a{
     border-radius: 15px;
     text-align: center;
 }
+
+.ext__item:nth-child(2){
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+.ext__item:nth-child(3){
+    margin-top: 80px;
+    margin-bottom: -80px;
+}
+
 
 .ext__item:not(:last-child){
     margin-right: 34px;
@@ -472,7 +483,7 @@ a{
     border: 2px solid var(--button-color);
 }
 
-.ext__logo-btn:active{
+.ext__logo-btn:hover{
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
@@ -586,7 +597,7 @@ a{
     border: 2px solid var(--button-color);
 }
 
-.faq__btn:active{
+.faq__btn:hover{
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
