@@ -521,10 +521,12 @@ a{
 
 .faq__question{
     display: block;
+    position: relative;
 }
 
 .faq__question::after {
-    margin-left: 100px;
+    position: absolute;
+    right: 20px;
     display: inline-block;
     transition: 1s;
     content: url(../images/down.svg)
@@ -637,6 +639,19 @@ a{
 
 .contac__info{
     text-align: center;
+}
+
+.form-input:valid{
+    border: none;
+}
+
+.form-input:not(:focus):not(:placeholder-shown):invalid{
+    background: var(--main-bg-color);
+    border: 2px solid var(--line_active-color);
+    border-radius: 5px;
+    background-image: url(../images/error.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 125px);
 }
 
 .contact-email{
